@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+    <script>
+      var searchParams = new URLSearchParams(window.location.search);
+
+      localStorage.setItem("access_token", searchParams.get("access_token"));
+    </script>
+  </head>
+  <body>
+    <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+      <label>Select Your Image (jpg, png)</label><br/>
+      <input type="file" name="file" id="file" required />
+      <input type="submit" value="Upload" class="submit" />
+    </form>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Tags</th>
+        <th>Accessibility</th>
+        <th>Coordinates</th>
+      </tr>
+    </table>
+  </body>
+</html>
