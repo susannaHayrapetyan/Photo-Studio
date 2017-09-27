@@ -49,7 +49,8 @@ I have chosen
 * [Google Cloud Storage](https://cloud.google.com/storage/) for storing and serving photos binary data
 * [JSON Web Tokens](https://jwt.io/) for token based authentication
 * REST API - for architecture of HTTP requests
+* uuid - for unique image names
 
 Notes:
-* I have sent access_token as QS parameter as you have mentioned, but I'll prefer to send tokent with header of request
+* I have sent access_token as QS parameter as you have mentioned, but I'll prefer to send token with header of request
 * actually client side is not implemented
